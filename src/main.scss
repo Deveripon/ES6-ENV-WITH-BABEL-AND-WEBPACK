@@ -1,0 +1,17 @@
+body {
+	background-color: aqua;
+}
+.card {
+	background-color: teal;
+	outline: none;
+	border: 2px solid #eee;
+	transition: 0.3s;
+	&:hover {
+		background-color: aquamarine;
+	}
+}
+img {
+	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px #827f7f;
+}

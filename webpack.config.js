@@ -11,6 +11,8 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, "bundle"),
 		filename: "bundle.js",
+		assetModuleFilename: "[name][ext]",
+		clean: true,
 	},
 	/**
 	 * @var		mixed	modul
@@ -31,6 +33,10 @@ module.exports = {
 			{
 				test: /\.(css|scss)$/,
 				use: ["style-loader", "css-loader", "sass-loader"],
+			},
+			{
+				test: /\.(jpg|jpeg|png|webp|gif|svg)$/,
+				type: "asset/resource",
 			},
 		],
 	},
